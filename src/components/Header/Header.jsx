@@ -1,7 +1,15 @@
-import React from 'react'
+import React from 'react';
+import { Logo} from 'components/Logo/Logo';
+import { BurgerMenuBtn } from 'components/BurgerMenuBtn/BurgerMenuBtn';
+import s from './Header.module.css';
 
-export const Header = () => {
+const Header = () => {
   return (
-    <div>Header</div>
+    <header className={s.header}>
+      <Logo/>
+      <BurgerMenuBtn/>
+    </header>
   )
 }
+
+export default Header;
